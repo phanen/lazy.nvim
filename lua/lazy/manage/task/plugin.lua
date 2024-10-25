@@ -92,7 +92,7 @@ M.docs = {
   run = function(self)
     local docs = self.plugin.dir .. "/doc"
     if Util.file_exists(docs) then
-      self:log(vim.api.nvim_cmd({ cmd = "helptags", args = { docs } }, { output = true }))
+      -- self:log(vim.api.nvim_cmd({ cmd = "helptags", args = { docs } }, { output = true }))
     end
   end,
 }
